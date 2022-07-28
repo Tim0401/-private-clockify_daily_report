@@ -12,17 +12,10 @@ import (
 )
 
 const (
-	baseEndpoint = "https://api.clockify.me/api/v1/"
-	userPath     = "user"
-
 	reportsEndpoint = "https://reports.api.clockify.me/v1"
 	//  /workspaces/{workspaceId}/reports/detailed
 	detailedReportPath = "/workspaces/%s/reports/detailed"
 )
-
-type User struct {
-	ID string `json:"id"`
-}
 
 type DetailedReportReq struct {
 	DateRangeStart string         `json:"dateRangeStart"`
